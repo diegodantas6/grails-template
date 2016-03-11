@@ -1,0 +1,11 @@
+# build files
+*.class
+*.log
+*.tmp
+*.classpath
+*.project
+
+# MAC File
+/.DS_Store
+
+/target-eclipse/
