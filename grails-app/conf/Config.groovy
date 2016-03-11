@@ -116,19 +116,23 @@ log4j.main = {
            'net.sf.ehcache.hibernate'
 }
 
+// Configuracoes
+grails.plugin.springsecurity.logout.postOnly = false
+grails.plugin.springsecurity.password.algorithm = 'SHA-256'
+
+grails.plugin.springsecurity.logout.afterLogoutUrl = '/'
+grails.plugin.springsecurity.successHandler.defaultTargetUrl = '/menu'
+grails.plugin.springsecurity.successHandler.alwaysUseDefault = true
 
 // Added by the Spring Security Core plugin:
 grails.plugin.springsecurity.userLookup.userDomainClassName = 'br.com.controleAcesso.Usuario'
 grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'br.com.controleAcesso.UsuarioPermissao'
 grails.plugin.springsecurity.authority.className = 'br.com.controleAcesso.Permissao'
+
 grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	'/':                ['permitAll'],
 	'/index':           ['permitAll'],
 	'/index.gsp':       ['permitAll'],
 	'/assets/**':       ['permitAll'],
-	'/**/js/**':        ['permitAll'],
-	'/**/css/**':       ['permitAll'],
-	'/**/images/**':    ['permitAll'],
-	'/**/favicon.ico':  ['permitAll']
+	'/adminlte/**':     ['permitAll']
 ]
-
