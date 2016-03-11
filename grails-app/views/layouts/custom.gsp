@@ -5,6 +5,7 @@
     
     <!-- CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="${createLink(uri: '/adminlte/plugins/reset/normalize.css')}">
     <link rel="stylesheet" href="${createLink(uri: '/adminlte/plugins/parsley/parsley.css')}">
     <link rel="stylesheet" href="${createLink(uri: '/adminlte/bootstrap/css/bootstrap.min.css')}">
     <link rel="stylesheet" href="${createLink(uri: '/adminlte/plugins/pNotify/pnotify.custom.min.css')}">
@@ -434,15 +435,19 @@
                   <div class="box-body">
                     <div class="form-group">
                       <label for="exampleInputEmail1">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" required>
                     </div>
                     <div class="form-group">
                       <label for="exampleInputPassword1">Password</label>
                       <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                     </div>
                     <div class="form-group">
-                      <label for="exampleInputPassword1">Teste</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                      <label>Teste</label>
+                      <select class="form-control" required>
+                        <option value="" selected>Select your option</option>
+                        <option>Teste 1</option>
+                        <option>Teste 2</option>
+                      </select>
                     </div>
                     <div class="form-group">
                       <label for="exampleInputFile">File input</label>
