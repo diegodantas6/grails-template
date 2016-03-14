@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="layout" content="custom"/>
+	<meta name="layout" content="menu"/>
 </head>
 <body>
 </body>

@@ -26,12 +26,12 @@
 	                <div class="col-middle">
 	                    <div class="text-center">
 	                        
-	                        <h1 class="error-number">500</h1>
+	                        <h1 class="error-number">404</h1>
 	                        
-	                        <h2>Erro Inesperado</h2>
+	                        <h2>OPS!!!</h2>
 	                        
 	                        <p>
-	                        	Desculpe, não foi possível realizar esta operação.
+	                        	Página não encontrada.
 	                        </p>
 	                        
 	                        <p>
