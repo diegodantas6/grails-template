@@ -9,10 +9,12 @@ class Usuario implements Serializable {
 	String username
 	String password
 	boolean enabled = true
-	boolean accountExpired
-	boolean accountLocked
-	boolean passwordExpired
-
+	boolean accountExpired = false
+	boolean accountLocked = false
+	boolean passwordExpired = false
+	UsuarioGrupo usuarioGrupo
+	String email
+	
 	Usuario(String username, String password) {
 		this()
 		this.username = username
@@ -27,11 +29,6 @@ class Usuario implements Serializable {
 	@Override
 	boolean equals(other) {
 		is(other) || (other instanceof Usuario && other.username == username)
-	}
-
-	@Override
-	String toString() {
-		username
 	}
 
 	Set<Permissao> getAuthorities() {
@@ -57,9 +54,18 @@ class Usuario implements Serializable {
 	static constraints = {
 		username blank: false, unique: true
 		password blank: false
+		usuarioGrupo nullable: false
+		email nullable: true
 	}
 
 	static mapping = {
 		password column: '`password`'
+	}
+	
+	public String getAtivo() {
+		if (enabled)
+			return "Sim"
+		else
+			return "Não"
 	}
 }

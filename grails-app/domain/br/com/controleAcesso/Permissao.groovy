@@ -5,6 +5,8 @@ class Permissao implements Serializable {
 	private static final long serialVersionUID = 1
 
 	String authority
+	String descricao
+	PermissaoGrupo permissaoGrupo
 
 	Permissao(String authority) {
 		this()
@@ -19,11 +21,6 @@ class Permissao implements Serializable {
 	@Override
 	boolean equals(other) {
 		is(other) || (other instanceof Permissao && other.authority == authority)
-	}
-
-	@Override
-	String toString() {
-		authority
 	}
 
 	static constraints = {
