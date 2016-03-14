@@ -9,11 +9,9 @@
 
 	<h2>Acesso Negado</h2>
 
-	<p>Desculpe, você não possui autorização para acessar esta
-		página.</p>
+	<p>Desculpe, você não possui autorização para acessar esta página.</p>
 
-	<p>Entre em contato com o administrador para obter permissão.
-	</p>
+	<p>Entre em contato com o administrador para obter permissão.</p>
 
 	<div class="mid_center">
 		<h3>

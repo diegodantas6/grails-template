@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="layout" content="menu"/>
+	<title>Template</title>
 </head>
 <body>
+	<g:link elementId='_login' controller='login'>Login</g:link>
 </body>
 </html>
